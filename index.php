@@ -268,7 +268,7 @@
 <script>
 function myMap()
 {
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  myCenter=new google.maps.LatLng(3.100329, 101.644743);
   var mapOptions= {
     center:myCenter,
     zoom:12, scrollwheel: false, draggable: false,
