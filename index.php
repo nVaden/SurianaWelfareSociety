@@ -1,3 +1,5 @@
+<?php include_once 'vals/inc/configAll.php'; ?>
+
 <!DOCTYPE html>
 <html>
 <title>Suriana Welfare Society of Malaysia</title>
