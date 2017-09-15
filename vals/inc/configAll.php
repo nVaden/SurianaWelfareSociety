@@ -10,7 +10,9 @@ else
   $homeurl = 'http://'.$_SERVER['SERVER_ADDR'].'/SurianaWelfareSociety';
 
 $localwhitelist = array(
-  '192.168.1.82','192.168.0.165','192.168.0.116'
+
+  '192.168.0.128','192.168.0.165'
+
   );
 
 if(in_array($_SERVER['REMOTE_ADDR'], $localwhitelist)){
@@ -21,7 +23,7 @@ if(in_array($_SERVER['REMOTE_ADDR'], $localwhitelist)){
   $db_name = 'Suriana';
   $db_host = 'localhost';
 
-  if($_SERVER['REMOTE_ADDR'] == '192.168.1.82'){
+  if($_SERVER['REMOTE_ADDR'] == '192.168.0.128'){
     $db_password = 'root';
     $homeurl = 'http://'.$_SERVER['SERVER_ADDR'].':8888/SurianaWelfareSociety';
   }

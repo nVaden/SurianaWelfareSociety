@@ -1,87 +1,16 @@
-<?php include_once 'vals/inc/configAll.php'; ?>
+<?php include_once 'vals/inc/configAll.php'; 
+       ?>
 
 <!DOCTYPE html>
 <html>
 <title>Suriana Welfare Society of Malaysia</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
-
-
 
 <body id="myPage">
 
-  <!-- Sidebar on click -->
-  <nav class="w3-sidebar w3-bar-block w3-white w3-card-2 w3-animate-left w3-large" style="display:none;z-index:2" id="mySidebar">
-
-    <a href="#" class="w3-bar-item w3-button w3-display-topleft" style="padding-top:25px !important">Do You Need Help Now?</a>  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal" style="font-size:10px">Close
-      <i class="fa fa-remove"></i>
-    </a>
-    <form class="form-horizontal">
-      <div class="form-group">
-        <label class="control-label col-sm-2" for="email">Name:</label>
-        <div class="col-sm-10">
-          <input type="email" class="form-control" id="Name" placeholder="Enter your name">
-        </div>
-      </div>
-      <div class="form-group">
-        <label class="control-label col-sm-2" for="pwd">Contact:</label>
-        <div class="col-sm-10"> 
-          <input type="email" class="form-control" id="pwd" placeholder="How can we contact you?">
-        </div>
-      </div>
-      <div class="form-group">
-        <label class="control-label col-sm-2" for="pwd">Emergency:</label>
-        <div class="col-sm-10"> 
-          <input type="email" class="form-control" id="pwd" placeholder="Are you in danger?">
-        </div>
-      </div>
-    </div>
-    <br/>
-    <div class="form-group"> 
-      <div class="col-sm-offset-2 col-sm-10">
-        <button type="submit" class="btn btn-default">Submit</button>
-      </div>
-    </div>
-  </form>
-
-
-</nav>
-
-<!-- Navbar -->
-<div class="w3-top">
- <div class="w3-bar w3-theme-d2 w3-left-align">
-  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Suriana Welfare Society Of Malaysia</a>
-  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">What We Do</a>
-  <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Blog</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Take Action</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
-  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
-<!--     <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-button" title="Notifications">Take Action <i class="fa fa-caret-down"></i></button>     
-      <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-        <a href="#" class="w3-bar-item w3-button">Link</a>
-        <a href="#" class="w3-bar-item w3-button">Link</a>
-        <a href="#" class="w3-bar-item w3-button">Link</a>
-      </div>
-    </div> -->
-
-  </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-    <a href="#team" class="w3-bar-item w3-button">Team</a>
-    <a href="#work" class="w3-bar-item w3-button">Work</a>
-    <a href="#pricing" class="w3-bar-item w3-button">Price</a>
-    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-    <a href="#" class="w3-bar-item w3-button">Search</a>
-  </div>
-</div>
+<?php include_once 'subcontent/headersub.php'; 
+      include_once'subcontent/nav.php'; ?>
 
 <!-- Image Header -->
 <div class="w3-display-container w3-animate-opacity">
@@ -349,22 +278,7 @@ To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 -->
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
-  <h4>Follow Us</h4>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
-  <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-
-  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
-    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
-    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
-      <i class="fa fa-chevron-circle-up"></i></span></a>
-    </div>
-  </footer>
+<?php include_once 'subcontent/footer.php'; ?>
 
   <script>
 // Script for side navigation
