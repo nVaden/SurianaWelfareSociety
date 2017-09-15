@@ -21,14 +21,6 @@
 .w3-hover-text-theme:hover {color:#000000 !important}
 .w3-hover-border-theme:hover {border-color:#000000 !important}
 
-.programs button.programs-filter-btn-active,
-.programs button.programs-sort-btn-active {
-   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5) inset, 0px 0px 1px transparent;
-   background: #3a9fbf;
-   color: white;
-}
-
-
 
 /* W3.CSS 4.04 Apr 2017 by Jan Egil and Borge Refsnes */
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}

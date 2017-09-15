@@ -8,45 +8,11 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.8.0/slick.css"/> -->
-<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.8.0/slick.min.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="/path/to/mixitup.min.js"></script>
-<script>
-  mixitup('#mix-wrapper', {
-    load: {
-      sort: 'order:asc' /* default:asc */
-    },
-    animation: {
-      effects: 'fade rotateZ(-180deg)', /* fade scale */
-      duration: 700 /* 600 */
-    },
-    classNames: {
-      block: 'programs', /* mixitup */
-      elementFilter: 'filter-btn', /* control */
-      elementSort: 'sort-btn' /* control */
-    },
-    selectors: {
-      target: '.mix-target' /* .mix */
-    }
-  });
-</script>
-
-<script>
-  $(document).ready(function(){
-    // $('.your-class').slick({
-    //   setting-name: setting-value
-    // });
+<link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
 
 
-    $('.your-class').slick({
-      infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 3
-    });
-  });
-</script> -->
+
 <body id="myPage">
 
   <!-- Sidebar on click -->
@@ -161,11 +127,16 @@
   </li>
 
   <!-- Slick Feature -->
-  <div class="your-class">
-    <div>your content</div>
-    <div>your content</div>
-    <div>your content</div>
+
+  <div class="test" id="test" data-slick='{"slidesToShow":1, "slidesToScroll": 1, "dots": true, "autoplay": true, "autoplaySpeed": 4000}'>
+    <div><h3>1</h3></div>
+    <div style="background-color:black"><h3>2</h3></div>
+    <div style="background-color:blue"><h3>3</h3></div>
+    <div style="background-color:green"><h3>4</h3></div>
+    <div style="background-color:purple"><h3>5</h3></div>
+    <div style="background-color:white"><h3>6</h3></div>
   </div>
+
 
 
 </div>
@@ -419,6 +390,10 @@ function openNav() {
   }
 }
 </script>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="assets/slick/slick.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
 
 </body>
 </html>
