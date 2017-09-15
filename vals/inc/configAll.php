@@ -10,7 +10,9 @@ else
   $homeurl = 'http://'.$_SERVER['SERVER_ADDR'].'/SurianaWelfareSociety';
 
 $localwhitelist = array(
+
   '192.168.0.128','192.168.0.165'
+
   );
 
 if(in_array($_SERVER['REMOTE_ADDR'], $localwhitelist)){
@@ -57,7 +59,7 @@ $defaulturl['profile'] = $homeurl.'/u';
 // $itempurposeurl = 'https://s3-ap-southeast-1.amazonaws.com/images.rentmarket.my/uploads/icons/purposes';
 
 //used to send verification link
-$rmnoreplyemail = 'no-reply@rentmarket.com.my';
+$rmnoreplyemail = 'no-reply@SurianaWelfareSociety.com.my';
 
 $onlinememberid=0;
 if(isset($_SESSION['user'])){
