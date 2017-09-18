@@ -7,11 +7,87 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="assets/slick/main.css"/>
+<link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
+
+
+
 <body id="myPage">
+
+  <!-- Sidebar on click -->
+  <nav class="w3-sidebar w3-bar-block w3-white w3-card-2 w3-animate-left w3-large" style="display:none;z-index:2" id="mySidebar">
+
+    <a href="#" class="w3-bar-item w3-button w3-display-topleft" style="padding-top:25px !important">Do You Need Help Now?</a>  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal" style="font-size:10px">Close
+      <i class="fa fa-remove"></i>
+    </a>
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="email">Name:</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="Name" placeholder="Enter your name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="pwd">Contact:</label>
+        <div class="col-sm-10"> 
+          <input type="email" class="form-control" id="pwd" placeholder="How can we contact you?">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="pwd">Emergency:</label>
+        <div class="col-sm-10"> 
+          <input type="email" class="form-control" id="pwd" placeholder="Are you in danger?">
+        </div>
+      </div>
+    </div>
+    <br/>
+    <div class="form-group"> 
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+    </div>
+  </form>
+
+
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Suriana Welfare Society Of Malaysia</a>
+  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">What We Do</a>
+  <a href="#blog" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Blog</a>
+  <a href="#volunteer" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Take Action</a>
+  <a href="/Suriana/contact.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+<!--     <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-button" title="Notifications">Take Action <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+        <a href="#" class="w3-bar-item w3-button">Link</a>
+        <a href="#" class="w3-bar-item w3-button">Link</a>
+        <a href="#" class="w3-bar-item w3-button">Link</a>
+      </div>
+    </div> -->
+
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#team" class="w3-bar-item w3-button">Team</a>
+    <a href="#work" class="w3-bar-item w3-button">Work</a>
+    <a href="#pricing" class="w3-bar-item w3-button">Price</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    <a href="#" class="w3-bar-item w3-button">Search</a>
+  </div>
+</div>
 
 <?php include_once 'subcontent/headersub.php'; 
       include_once'subcontent/nav.php'; ?>
-
 <!-- Image Header -->
 <div class="w3-display-container w3-animate-opacity">
   <img src="assets/images/banner-image.jpg" style="margin-left:7%; width:85%;min-height:350px;max-height:600px;">
@@ -57,7 +133,7 @@
 
   <!-- Slick Feature -->
 
-  <div class="test" id="test" data-slick='{"slidesToShow":1, "slidesToScroll": 1, "dots": true, "autoplay": true, "autoplaySpeed": 4000}'>
+  <div class="test" id="test" data-slick='{"slidesToShow":1, "slidesToScroll": 1, "dots": true, "autoplay": true, "autoplaySpeed": 3000}'>
     <div><h3>1</h3></div>
     <div style="background-color:black"><h3>2</h3></div>
     <div style="background-color:blue"><h3>3</h3></div>
@@ -77,39 +153,7 @@
   style="position:absolute;top:-28px;right:24px">Do you need help now?</a>
 
 </div>
-<!-- Team Container -->
-<div class="w3-container w3-padding-64 w3-center" id="team">
-  <h2>OUR FOCUS</h2>
-  <p>Promoting and Protecting The Rights Of Children</p>
 
-  <div class="w3-row"><br>
-
-    <div class="w3-quarter">
-      <img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-      <h3>Johnny Walker</h3>
-      <p>Web Designer</p>
-    </div>
-
-    <div class="w3-quarter">
-      <img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-      <h3>Rebecca Flex</h3>
-      <p>Support</p>
-    </div>
-
-    <div class="w3-quarter">
-      <img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-      <h3>Jan Ringo</h3>
-      <p>Boss man</p>
-    </div>
-
-    <div class="w3-quarter">
-      <img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-      <h3>Kai Ringo</h3>
-      <p>Fixer</p>
-    </div>
-
-  </div>
-</div>
 <!-- Work Row -->
 <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
 
@@ -119,7 +163,7 @@
   </div>
 
   <div class="w3-quarter">
-    <div class="w3-card-2 w3-white">
+    <div class="w3-card-2 w3-white card-display">
       <img src="assets/images/img2.jpg"  style="width:100%">
       <div class="w3-container">
         <h3>VICTIMS OF CHILD ABUSE</h3>
@@ -131,7 +175,7 @@
   </div>
 
   <div class="w3-quarter">
-    <div class="w3-card-2 w3-white">
+    <div class="w3-card-2 w3-white card-display">
       <img src="assets/images/img2.jpg" style="width:100%">
       <div class="w3-container">
         <h3>TRAFFICKING SURVIVORS</h3>
@@ -143,7 +187,7 @@
   </div>
 
   <div class="w3-quarter">
-    <div class="w3-card-2 w3-white">
+    <div class="w3-card-2 w3-white card-display">
       <img src="assets/images/img3.jpg" style="width:100%">
       <div class="w3-container">
         <h3>VICTIMS OF URBAN POVERTY</h3>
@@ -159,7 +203,7 @@
 
 
 <!-- Pricing Row -->
-<div class="w3-row-padding w3-center w3-padding-64" id="pricing">
+<!-- <div class="w3-row-padding w3-center w3-padding-64" id="pricing">
   <h2>PRICING</h2>
   <p>Choose a pricing plan that fits your needs.</p><br>
   <div class="w3-third w3-margin-bottom">
@@ -218,40 +262,9 @@
       </li>
     </ul>
   </div>
-</div>
+</div> -->
 
-<!-- Contact Container -->
-<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
-  <div class="w3-row">
-    <div class="w3-col m5">
-      <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
-      <h3>Address</h3>
-      <p>Swing by for a cup of coffee, or whatever.</p>
-      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Chicago, US</p>
-      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +00 1515151515</p>
-      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  test@test.com</p>
-    </div>
-    <div class="w3-col m7">
-      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
-        <div class="w3-section">      
-          <label>Name</label>
-          <input class="w3-input" type="text" name="Name" required>
-        </div>
-        <div class="w3-section">      
-          <label>Email</label>
-          <input class="w3-input" type="text" name="Email" required>
-        </div>
-        <div class="w3-section">      
-          <label>Message</label>
-          <input class="w3-input" type="text" name="Message" required>
-        </div>  
-        <input class="w3-check" type="checkbox" checked name="Like">
-        <label>I Like it!</label>
-        <button type="submit" class="w3-button w3-right w3-theme">Send</button>
-      </form>
-    </div>
-  </div>
-</div>
+
 
 <!-- Google Maps -->
 <div id="googleMap" style="width:100%;height:420px;"></div>
@@ -272,7 +285,7 @@
     marker.setMap(map);
   }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4nO2W7RBU2pEJW4CNypCwek6qt30sl_s&callback=myMap"></script>
 <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp

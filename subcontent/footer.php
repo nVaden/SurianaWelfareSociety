@@ -7,9 +7,15 @@
   <a class="w3-button w3-large w3-teal" target="_blank" href="https://plus.google.com/" title="Google +"><i class="fa fa-google-plus"></i></a>
   <p>©[2017] Suriana Welfare Society Malaysia</p>
 
-  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
-    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
-    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
-    <i class="fa fa-chevron-circle-up"></i></span></a>
-  </div>
-</footer>
+
+echo '<script src="'.$defaulturl['home'].'/assets/js/pins/jquery.js"></script>';
+echo '<script src="'.$defaulturl['home'].'/assets/js/pins/bootstrap.min.js"></script>';
+echo '<script src="'.$defaulturl['home'].'/assets/js/pins/jquery-confirm.min.js"></script>';
+echo '<script src="'.$defaulturl['home'].'/assets/js/main.js"></script>';
+echo '<script type="text/javascript" src="assets/js/jquery.js"></script>';
+echo '<script type="text/javascript" src="assets/js/jquery-migrate.min.js"></script>';
+echo '<script type="text/javascript" src="assets/slick/slick.js"></script>';
+echo '<script type="text/javascript" src="assets/js/main.js"></script>';
+
+?>
+
