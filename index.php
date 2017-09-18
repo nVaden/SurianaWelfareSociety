@@ -12,13 +12,14 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="assets/slick/main.css"/>
 <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
+<link rel="stylesheet" type="text/css" href="assets/css/pins/bootstrap.css">
 
 
 
 <body id="myPage">
 
   <!-- Sidebar on click -->
-  <nav class="w3-sidebar w3-bar-block w3-white w3-card-2 w3-animate-left w3-large" style="display:none;z-index:2" id="mySidebar">
+<!--   <nav class="w3-sidebar w3-bar-block w3-white w3-card-2 w3-animate-left w3-large" style="display:none;z-index:2" id="mySidebar">
 
     <a href="#" class="w3-bar-item w3-button w3-display-topleft" style="padding-top:25px !important">Do You Need Help Now?</a>  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal" style="font-size:10px">Close
       <i class="fa fa-remove"></i>
@@ -45,23 +46,27 @@
     </div>
     <br/>
     <div class="form-group"> 
-      <div class="col-sm-offset-2 col-sm-10">
+      <div class="col-sm-offset-2 col-sm-2">
         <button type="submit" class="btn btn-default">Submit</button>
       </div>
     </div>
   </form>
-
+ -->
 
 </nav>
+
+ <?php
+ include 'subcontent/nav.php';
+ ?>
 
 <!-- Navbar -->
 <div class="w3-top">
  <div class="w3-bar w3-theme-d2 w3-left-align">
   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
   <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Suriana Welfare Society Of Malaysia</a>
-  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">What We Do</a>
-  <a href="#blog" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Blog</a>
-  <a href="#volunteer" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Take Action</a>
+  <a href="#test-target" class="w3-bar-item w3-button w3-hide-small w3-hover-white">What We Do</a>
+  <a href="/Suriana/blog.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Blog</a>
+  <a href="/Suriana/volunteer.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Take Action</a>
   <a href="/Suriana/contact.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
 
   <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
@@ -90,114 +95,182 @@
       include_once'subcontent/nav.php'; ?>
 <!-- Image Header -->
 <div class="w3-display-container w3-animate-opacity">
-  <img src="assets/images/banner-image.jpg" style="margin-left:7%; width:85%;min-height:350px;max-height:600px;">
+  <img src="assets/images/banner-image.jpg" style="margin-left:7%; width:85%; min-height:350px;max-height:600px;">
   <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
-    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">Suriana Welfare Society of Malaysia</button>
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Click Here">Do you need help now?</button>
   </div>
 </div>
 
 
-<!-- Modal -->
+<!-- Modal / Do you need help? -->
 <div id="id01" class="w3-modal">
   <div class="w3-modal-content w3-card-4 w3-animate-top">
     <header class="w3-container w3-teal w3-display-container"> 
       <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
-      <h4>Oh snap! We just showed you a modal..</h4>
-      <h5>Because we can <i class="fa fa-smile-o"></i></h5>
+      <h3>Do you need help now?</h3>
+      <p>Please give us all the contact information you can.</p>
     </header>
     <div class="w3-container">
-      <p>Cool huh? Ok, enough teasing around..</p>
-      <p>Go to our <a class="w3-text-teal" href="/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
+
+      <form class="form-inline">
+        <hr/>
+        <div class="form-group">
+          <label for="name">Full name: </label>
+          <input type="email" class="form-control" id="name">
+        </div>
+        <div class="form-group">
+          <label for="location">Location:</label>
+          <input type="email" class="form-control" id="location">
+        </div>
+        <div class="form-group">
+          <label for="number">Contact #: </label>
+          <input type="email" class="form-control" id="number">
+        </div>
+        <div class="form-group" style="margin-top:10px">
+          <textarea placeholder="Write a brief description of your situation.." class="form-control" rows="7" cols="109" id="description"></textarea>
+        </div>
+        <hr/>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
     </div>
     <footer class="w3-container w3-teal">
-      <p>Modal footer</p>
+      <p>*All details given will be handled with the upmost privacy and addressed as soon as possible.</p>
     </footer>
   </div>
 </div>
 
+<!-- Main Blog Body -->
 
-<!-- PRIMARY BODY SECTION WITH SORTABLE POSTS -->
-<!-- Resort feature -->
-<div class="" style="height:1000px;background-color:teal">
-  <div style="height:200px; color:white">Here The two features basics are place, to be made</div>
-  <button class="sort-btn" data-sort="order:asc">Ascending</button>
-  <button class="sort-btn" data-sort="year:desc order:desc">Descending <span class="multi">(Multi)</span></button>
+<div class="w3-row-padding w3-padding-64" style="background-color:teal; height:800px">
 
-
-  <li class="mix-target undergraduate">
-    <a href="#">Blogs<span>(U)</span></a>
-  </li>
-  <li class="mix-target graduate">
-    <a href="#">Stories<span>(G)</span></a>
-  </li>
-
-  <!-- Slick Feature -->
-
-  <div class="test" id="test" data-slick='{"slidesToShow":1, "slidesToScroll": 1, "dots": true, "autoplay": true, "autoplaySpeed": 3000}'>
-    <div><h3>1</h3></div>
-    <div style="background-color:black"><h3>2</h3></div>
-    <div style="background-color:blue"><h3>3</h3></div>
-    <div style="background-color:green"><h3>4</h3></div>
-    <div style="background-color:purple"><h3>5</h3></div>
-    <div style="background-color:white"><h3>6</h3></div>
+  <div class="w3-quarter">
+    <a href="#">
+      <div class="w3-card-2 w3-white card-display">
+        <img src="assets/images/img2.jpg" class="card-img">
+        <div class="w3-container">
+          <h3>VICTIMS OF CHILD ABUSE</h3>
+          <p>Suriana Welfare Society is spearheading a nationwide ChildSafe Initiative that is designed to protect children from the scourge of Pedophiles and Sexual Predators.</p>
+        </div>
+      </div>
+    </a>
   </div>
 
+  <div class="w3-quarter">
+    <a href="#">
+      <div class="w3-card-2 w3-white card-display">
+        <img src="assets/images/img2.jpg" class="card-img">
+        <div class="w3-container">
+          <h3>VICTIMS OF CHILD ABUSE</h3>
+          <p>Suriana Welfare Society is spearheading a nationwide ChildSafe Initiative that is designed to protect children from the scourge of Pedophiles and Sexual Predators.</p>
+        </div>
+      </div>
+    </a>
+  </div>
 
+  <div class="w3-quarter">
+    <a href="#">
+      <div class="w3-card-2 w3-white card-display">
+        <img src="assets/images/img2.jpg" class="card-img">
+        <div class="w3-container">
+          <h3>TRAFFICKING SURVIVORS</h3>
+
+          <p>Suriana Welfare Society has been appointed by the Ministry of Social Welfare to conduct counseling sessions and empowerment programs to restore dignity to the Survivors of Human Trafficking.</p>
+
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="w3-quarter">
+    <a href="#">
+      <div class="w3-card-2 w3-white card-display">
+        <img src="assets/images/img3.jpg" class="card-img">
+        <div class="w3-container">
+          <h3>VICTIMS OF URBAN POVERTY</h3>
+          <p>Our mission is to serve and bring economic transformation and enrichment to the victims of urban poverty in Malaysia. We promote practical and innovative solutions as well as advocate for the rights of the victims.</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="w3-quarter">
+    <a href="#">
+      <div class="w3-card-2 w3-white card-display">
+        <img src="assets/images/img2.jpg" class="card-img">
+        <div class="w3-container">
+          <h3>TRAFFICKING SURVIVORS</h3>
+
+          <p>Suriana Welfare Society has been appointed by the Ministry of Social Welfare to conduct counseling sessions and empowerment programs to restore dignity to the Survivors of Human Trafficking.</p>
+
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="w3-quarter">
+    <a href="#">
+      <div class="w3-card-2 w3-white card-display">
+        <img src="assets/images/img2.jpg" class="card-img">
+        <div class="w3-container">
+          <h3>TRAFFICKING SURVIVORS</h3>
+
+          <p>Suriana Welfare Society has been appointed by the Ministry of Social Welfare to conduct counseling sessions and empowerment programs to restore dignity to the Survivors of Human Trafficking.</p>
+
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="w3-quarter">
+    <a href="#">
+      <div class="w3-card-2 w3-white card-display">
+        <img src="assets/images/img2.jpg" class="card-img">
+        <div class="w3-container">
+          <h3>TRAFFICKING SURVIVORS</h3>
+
+          <p>Suriana Welfare Society has been appointed by the Ministry of Social Welfare to conduct counseling sessions and empowerment programs to restore dignity to the Survivors of Human Trafficking.</p>
+
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="w3-quarter">
+    <a href="#">
+      <div class="w3-card-2 w3-white card-display">
+        <img src="assets/images/img2.jpg" class="card-img">
+        <div class="w3-container">
+          <h3>TRAFFICKING SURVIVORS</h3>
+
+          <p>Suriana Welfare Society has been appointed by the Ministry of Social Welfare to conduct counseling sessions and empowerment programs to restore dignity to the Survivors of Human Trafficking.</p>
+
+        </div>
+      </div>
+    </a>
+  </div>
+
+</div>
+<hr id="test-target"/>
+<br/>
+
+<div class="what-we-do" style="height:1000px; margin-top:10%">
+  <h1 href="info-sect" class="info-sect"> What We Do </h1>
+  <!-- Slick Feature -->
+  <div class="col-lg-12 col-m-12 col-sm-12" id="test" data-slick='{"slidesToShow":4, "slidesToScroll": 1, "dots": true, "autoplay": true, "autoplaySpeed": 500}'>
+    <div style="background-color:teal"><h3>2</h3></div>
+    <div style="background-color:black"><h3>3</h3></div>
+    <div style="background-color:teal"><h3>2</h3></div>
+    <div style="background-color:black"><h3>3</h3></div>
+
+  </div>
 
 </div>
 
 
 <!-- Do you need help now? -->
-<div class="w3-container" style="position:relative">
+<!-- <div class="w3-container" style="position:relative">
   <a onclick="w3_open()" id="sideTask" class="w3-button w3-xlarge w3-circle w3-red"
   style="position:absolute;top:-28px;right:24px">Do you need help now?</a>
 
-</div>
+</div> -->
 
-<!-- Work Row -->
-<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
 
-  <div class="w3-quarter">
-    <h2>Our Work</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
-
-  <div class="w3-quarter">
-    <div class="w3-card-2 w3-white card-display">
-      <img src="assets/images/img2.jpg"  style="width:100%">
-      <div class="w3-container">
-        <h3>VICTIMS OF CHILD ABUSE</h3>
-
-        <p>Suriana Welfare Society is spearheading a nationwide ChildSafe Initiative that is designed to protect children from the scourge of Pedophiles and Sexual Predators.</p>
-
-      </div>
-    </div>
-  </div>
-
-  <div class="w3-quarter">
-    <div class="w3-card-2 w3-white card-display">
-      <img src="assets/images/img2.jpg" style="width:100%">
-      <div class="w3-container">
-        <h3>TRAFFICKING SURVIVORS</h3>
-
-        <p>Suriana Welfare Society has been appointed by the Ministry of Social Welfare to conduct counseling sessions and empowerment programs to restore dignity to the Survivors of Human Trafficking.</p>
-
-      </div>
-    </div>
-  </div>
-
-  <div class="w3-quarter">
-    <div class="w3-card-2 w3-white card-display">
-      <img src="assets/images/img3.jpg" style="width:100%">
-      <div class="w3-container">
-        <h3>VICTIMS OF URBAN POVERTY</h3>
-
-        <p>Our mission is to serve and bring economic transformation and enrichment to the victims of urban poverty in Malaysia. We promote practical and innovative solutions as well as advocate for the rights of the victims.</p>
-      </div>
-    </div>
-  </div>
-
-</div>
 
 <!-- Container -->
 
