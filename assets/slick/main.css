@@ -1,4 +1,10 @@
-/* Slider */
+
+.card-display {
+    border-radius:10px;
+}
+
+
+/*slider*/
 .slick-slider
 {
     position: relative;
