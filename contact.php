@@ -1,21 +1,41 @@
+<?php 
+
+include_once 'vals/inc/configAll.php'; 
+
+?>
+
+<?php 
+
+include_once 'vals/inc/configAll.php'; 
+
+?>
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF=8">
-  <title></title>
-  <link rel="stylesheet" href="default.css"/>
-  <script src="main.js"></script>
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/slick/main.css"/>
-  <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
-  <link rel="stylesheet" type="text/css" href="assets/css/pins/bootstrap.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="SurianaWelfareSociety">
+
+  <?php 
+  echo '<title>Contact Us</title>';
+  echo '<meta name="description" content="Promoting and Protecting The Rights Of Children">';
+
+  include_once 'subcontent/headersub.php';
+
+  ?>
+
 </head>
 <body>
- <header>
- </header>
- <div class="w3-container">
+
+  <?php 
+
+  include_once'subcontent/nav.php';
+
+  ?>
+
+  <div class="w3-container">
 
    <!-- Contact Container -->
    <div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
@@ -83,27 +103,43 @@
       </div>
     </div>
   </div>
+  
 
 
   <!-- Google Maps -->
   <div id="googleMap" style="width:100%;height:420px;"></div>
-</body>
-</html>
-<script>
-  function myMap()
-  {
-    myCenter=new google.maps.LatLng(3.100329, 101.644743);
-    var mapOptions= {
-      center:myCenter,
-      zoom:12, scrollwheel: false, draggable: false,
-      mapTypeId:google.maps.MapTypeId.ROADMAP
-    };
-    var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+</div>
+<?php
 
-    var marker = new google.maps.Marker({
-      position: myCenter,
-    });
-    marker.setMap(map);
-  }
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4nO2W7RBU2pEJW4CNypCwek6qt30sl_s&callback=myMap"></script>
+include_once 'subcontent/footer.php'; 
+
+// Google Maps API ===============================================
+echo '<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(3.100329, 101.644743);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>';
+
+echo '<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4nO2W7RBU2pEJW4CNypCwek6qt30sl_s&callback=myMap"></script>';
+
+?>
+
+</body>
+
+</html>
+<?php
+
+?>
+
