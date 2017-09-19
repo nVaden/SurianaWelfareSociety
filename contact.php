@@ -78,36 +78,51 @@ include_once 'vals/inc/configAll.php';
         </div>
         <h3>Address</h3>
         <p>Swing by for a cup of coffee, or whatever.</p>
-        <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Chicago, US</p>
-        <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +00 1515151515</p>
-        <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  test@test.com</p>
+        <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Kuala Lumpur, MY</p>
+        <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +0123141100 </p>
+        <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i> suriana4children@gmail.com</p>
       </div>
       <div class="w3-col m7">
-        <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
-          <div class="w3-section">      
-            <label>Name</label>
-            <input class="w3-input" type="text" name="Name" required>
-          </div>
-          <div class="w3-section">      
-            <label>Email</label>
-            <input class="w3-input" type="text" name="Email" required>
-          </div>
-          <div class="w3-section">      
-            <label>Message</label>
-            <input class="w3-input" type="text" name="Message" required>
-          </div>  
-          <input class="w3-check" type="checkbox" checked name="Like">
-          <label>I Like it!</label>
-          <button type="submit" class="w3-button w3-right w3-theme">Send</button>
-        </form>
+
+        <form class="modal-content animate" action="/action_page.php">
+         <header class="w3-container w3-teal"> 
+          <h3>Do you need help now?</h3>
+          <p>Please give us all the contact information you can.</p>
+        </header>
+        
+        <div class="container">
+
+          <div class="form-group modal-align row">
+           <label><b>Email</b></label>
+           <input type="text" placeholder="Enter Email" class="form-control" name="email" required>
+         </div>
+
+
+         <div class="form-group modal-align row">
+           <label>Contact Us:</label>
+           <textarea placeholder="Please feel free to contact us.." class="form-control" rows="5" cols="100" id="description"></textarea>
+           <input type="checkbox" checked="checked"> Would you like to sign up for a subscription?<br/>
+           <input type="checkbox" checked="checked"> Remember me
+           <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+         </div>
+
+         <div class="clearfix form-group col-lg-12">
+          <button type="submit" class="modal-btn send-btn">Send</button>
+        </div>
+
       </div>
-    </div>
+      <div class="w3-teal modal-footer">
+        <p>*All details given will be handled with the upmost privacy and addressed as soon as possible.</p>
+      </div>
+    </form>
   </div>
-  
+</div>
+</div>
 
 
-  <!-- Google Maps -->
-  <div id="googleMap" style="width:100%;height:420px;"></div>
+
+<!-- Google Maps -->
+<div id="googleMap" style="width:100%;height:420px;"></div>
 </div>
 <?php
 

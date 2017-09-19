@@ -5,7 +5,16 @@
 .card-img {
     width:100%; border-top-left-radius:10px;border-top-right-radius:10px;
 }
-
+.modal-btn {
+    width:100px;
+}
+.modal-footer {
+    padding:3px;
+    text-align:left;
+}
+.modal-footer > p {
+    color:black;
+}
 .info-sect {
     text-align:center;
     margin-top:30px;
@@ -106,6 +115,10 @@ button {
 /* Add padding to container elements */
 .container {
     padding: 16px;
+}
+.modal-align {
+    padding:12px;
+    width:57%;
 }
 
 /* The Modal (background) */
