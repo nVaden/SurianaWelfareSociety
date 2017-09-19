@@ -40,10 +40,13 @@ include_once 'vals/inc/configAll.php';
 
 		<h1>Volunteer and Donation Page</h1>
 		<!-- Button to open the modal -->
-		<button onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
+		
+    <button class="signupbtn signupform">Sign Up</button>
+   
+    <button class="signinform signupbtn">Sign In</button> 
 
 		<!-- The Modal (contains the Sign Up form) -->
-		<div id="id01" class="modal">
+<!-- 		<div id="id01" class="modal">
 			<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
 			<form class="modal-content animate" action="/action_page.php">
 				<div class="container">
@@ -59,12 +62,15 @@ include_once 'vals/inc/configAll.php';
 					<p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
 					<div class="clearfix">
-						<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-						<button type="submit" class="signupbtn">Sign Up</button>
-					</div>
+						<!-- <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+						<button type="submit" class="signupbtn signupform">Sign Up</button>
+            <button type="submit" class="hidden signinform signupform">Sign In</button> -->
+              <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal " title="Singup">Singup</i></a>
+              <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal hidden signinform" title="Singup">Singin</i></a> -->
+					<!-- </div>
 				</div>
 			</form>
-		</div>
+		</div> -->
 	</div>
 
 <?php
