@@ -7,7 +7,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="assets/slick/main.css"/>
@@ -17,7 +17,7 @@
 <?php include_once 'subcontent/headersub.php'; 
       include_once'subcontent/nav.php'; ?>
 <!-- Image Header -->
-<div class="w3-display-container w3-animate-opacity">
+<div class="w3-display-container w3-animate-opacity" id="myPage">
   <img src="assets/images/banner-image.jpg" style="margin-left:7%; width:85%; min-height:350px;max-height:600px;">
   <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
     <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Click Here">Do you need help now?</button>
@@ -50,10 +50,10 @@
           <input type="email" class="form-control" id="number">
         </div>
         <div class="form-group" style="margin-top:10px">
-          <textarea placeholder="Write a brief description of your situation.." class="form-control" rows="7" cols="109" id="description"></textarea>
+          <textarea placeholder="Write a brief description of your situation.." class="form-control" rows="7" cols="100" id="description"></textarea>
         </div>
         <hr/>
-        <button type="submit" class="btn btn-default">Submit</button>
+        <button type="submit" class="btn-sm">Submit</button>
       </form>
     </div>
     <footer class="w3-container w3-teal">

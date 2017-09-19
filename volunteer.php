@@ -12,42 +12,43 @@
 	<link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
 	<link rel="stylesheet" type="text/css" href="assets/css/pins/bootstrap.css">
 </head>
-<body>
-	<header>
-	</header>
-</body>
+
+<?php include_once 'subcontent/headersub.php'; 
+include_once'subcontent/nav.php'; ?>
+
 <h1>Volunteer and Donation Page</h1>
 
+<body>
+	<!-- Button to open the modal -->
+	<button onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
 
-<!-- Button to open the modal -->
-<button onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
+	<!-- The Modal (contains the Sign Up form) -->
+	<div id="id01" class="modal">
+		<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+		<form class="modal-content animate" action="/action_page.php">
+			<div class="container">
+				<label><b>Email</b></label>
+				<input type="text" placeholder="Enter Email" name="email" required>
 
-<!-- The Modal (contains the Sign Up form) -->
-<div id="id01" class="modal">
-	<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-	<form class="modal-content animate" action="/action_page.php">
-		<div class="container">
-			<label><b>Email</b></label>
-			<input type="text" placeholder="Enter Email" name="email" required>
+				<label><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="psw" required>
 
-			<label><b>Password</b></label>
-			<input type="password" placeholder="Enter Password" name="psw" required>
+				<label><b>Repeat Password</b></label>
+				<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+				<input type="checkbox" checked="checked"> Remember me
+				<p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
-			<label><b>Repeat Password</b></label>
-			<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-			<input type="checkbox" checked="checked"> Remember me
-			<p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-
-			<div class="clearfix">
-				<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-				<button type="submit" class="signupbtn">Sign Up</button>
+				<div class="clearfix">
+					<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+					<button type="submit" class="signupbtn">Sign Up</button>
+				</div>
 			</div>
-		</div>
-	</form>
-</div>
+		</form>
+	</div>
 
-
+</body>
 </html>
+
 
 
 <script>
@@ -56,8 +57,8 @@ var modal = document.getElementById('id01');
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
+	if (event.target == modal) {
+		modal.style.display = "none";
+	}
 }
 </script>

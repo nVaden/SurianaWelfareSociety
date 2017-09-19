@@ -5,9 +5,9 @@ date_default_timezone_set("Asia/Kuala_Lumpur");
 $currenturl = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 
 if (strpos($currenturl,'localhost') !== false)
-  $homeurl = 'http://localhost/SurianaWelfareSociety';
+  $homeurl = 'http://localhost/suriana';
 else
-  $homeurl = 'http://'.$_SERVER['SERVER_ADDR'].'/SurianaWelfareSociety';
+  $homeurl = 'http://'.$_SERVER['SERVER_ADDR'].'/suriana';
 
 $localwhitelist = array(
 
