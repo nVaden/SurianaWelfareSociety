@@ -1,3 +1,4 @@
+
 <?php include_once '../vals/inc/configAll.php'; ?>
 
   <!-- Sidebar on click -->
@@ -70,4 +71,5 @@
           <a href="#" class="w3-bar-item w3-button">Search</a>';
     ?>
   </div>
+
 </div>
