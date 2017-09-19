@@ -11,7 +11,7 @@ else
 
 $localwhitelist = array(
 
-  '192.168.0.128','192.168.0.165'
+  '192.168.0.128','192.168.0.161','192.168.1.182'
 
   );
 
@@ -23,7 +23,7 @@ if(in_array($_SERVER['REMOTE_ADDR'], $localwhitelist)){
   $db_name = 'Suriana';
   $db_host = 'localhost';
 
-  if($_SERVER['REMOTE_ADDR'] == '192.168.0.128'){
+  if($_SERVER['REMOTE_ADDR'] == '192.168.0.128' || $_SERVER['REMOTE_ADDR'] == '192.168.1.82'){
     $db_password = 'root';
     $homeurl = 'http://'.$_SERVER['SERVER_ADDR'].':8888/SurianaWelfareSociety';
   }
@@ -32,22 +32,22 @@ if(in_array($_SERVER['REMOTE_ADDR'], $localwhitelist)){
 
   $connecDB = mysqli_connect($db_host, $db_username, $db_password, $db_name) or die('could not connect to database');
 }
-else {
-  //echo $_SERVER['REMOTE_ADDR'];
-  $homeurl = 'http://beta.rentmarket.com.my';
-  $homeurladmin = 'http://beta.rentmarket.com.my/admin';
-  $homeurlagent = 'http://beta.rentmarket.com.my/agent';
-  $apiurl = 'http://beta.rentmarket.com.my/rentapi';
+// else {
+//   //echo $_SERVER['REMOTE_ADDR'];
+//   $homeurl = 'http://beta.rentmarket.com.my';
+//   $homeurladmin = 'http://beta.rentmarket.com.my/admin';
+//   $homeurlagent = 'http://beta.rentmarket.com.my/agent';
+//   $apiurl = 'http://beta.rentmarket.com.my/rentapi';
 
-  //AWS online
-  $db_username = $_SERVER['RDS_USERNAME'];
-  $db_password = $_SERVER['RDS_PASSWORD'];
-  $db_name = $_SERVER['RDS_DB_NAME'];
-  $db_port = $_SERVER['RDS_PORT'];
-  $db_host = $_SERVER['RDS_HOSTNAME'];
+//   //AWS online
+//   $db_username = $_SERVER['RDS_USERNAME'];
+//   $db_password = $_SERVER['RDS_PASSWORD'];
+//   $db_name = $_SERVER['RDS_DB_NAME'];
+//   $db_port = $_SERVER['RDS_PORT'];
+//   $db_host = $_SERVER['RDS_HOSTNAME'];
 
-  $connecDB = mysqli_connect($db_host, $db_username, $db_password, $db_name,$db_port) or die('could not connect to database');
-}
+//   $connecDB = mysqli_connect($db_host, $db_username, $db_password, $db_name,$db_port) or die('could not connect to database');
+// }
 
 $defaulturl['home'] = $homeurl;
 $defaulturl['profile'] = $homeurl.'/u';
