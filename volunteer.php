@@ -46,26 +46,41 @@ include_once 'vals/inc/configAll.php';
 		<div id="id01" class="modal">
 			<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
 			<form class="modal-content animate" action="/action_page.php">
-				<div class="container">
-					<label><b>Email</b></label>
-					<input type="text" placeholder="Enter Email" name="email" required>
+       <header class="w3-container w3-teal"> 
+        <h3>Take Action Now</h3>
+        <p>Stand with us to fight against human trafficking and urban poverty.</p>
+      </header>
+      <div class="container">
+        <div class="form-group">
+         <label><b>Email</b></label>
+         <input type="text" placeholder="Enter Email" class="form-control" name="email" required>
+       </div>
 
-					<label><b>Password</b></label>
-					<input type="password" placeholder="Enter Password" name="psw" required>
+       <div class="form-group">
+         <label>Password</label>
+         <input type="password" placeholder="Enter Password" class="form-control"  name="psw" required>
+       </div>
 
-					<label><b>Repeat Password</b></label>
-					<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-					<input type="checkbox" checked="checked"> Remember me
-					<p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
-					<div class="clearfix">
-						<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-						<button type="submit" class="signupbtn">Sign Up</button>
-					</div>
-				</div>
-			</form>
-		</div>
-	</div>
+       <div class="form-group">
+         <label>Repeat Password</label>
+         <input type="password" placeholder="Repeat Password" class="form-control" name="psw-repeat" required>
+         <input type="checkbox" checked="checked"> Remember me
+         <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+       </div>
+
+       <div class="clearfix form-group">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+
+    </div>
+    <div class="w3-teal modal-footer">
+      <p>*All details given will be handled with the upmost privacy and addressed as soon as possible.</p>
+    </div>
+  </form>
+</div>
+</div>
 
 <?php
 

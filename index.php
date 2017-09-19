@@ -47,32 +47,37 @@ include_once 'vals/inc/configAll.php';
         <h3>Do you need help now?</h3>
         <p>Please give us all the contact information you can.</p>
       </header>
-      <div class="w3-container">
+      <div class="container-fluid">
 
         <form class="form-inline">
           <hr/>
-          <div class="form-group">
+          <div class="form-group col-md-4">
             <label for="name">Full name: </label>
             <input type="email" class="form-control" id="name">
           </div>
-          <div class="form-group">
+
+          <div class="form-group col-md-4">
             <label for="location">Location:</label>
             <input type="email" class="form-control" id="location">
           </div>
-          <div class="form-group">
+
+          <div class="form-group col-md-4">
             <label for="number">Contact #: </label>
             <input type="email" class="form-control" id="number">
           </div>
+
           <div class="form-group" style="margin-top:10px">
             <textarea placeholder="Write a brief description of your situation.." class="form-control" rows="7" cols="100" id="description"></textarea>
           </div>
           <hr/>
-          <button type="submit" class="btn-sm">Submit</button>
+          <button type="submit" class="modal-btn btn">Submit</button>
         </form>
+
       </div>
-      <footer class="w3-container w3-teal">
+      <hr/>
+      <div class="w3-teal modal-footer">
         <p>*All details given will be handled with the upmost privacy and addressed as soon as possible.</p>
-      </footer>
+      </div>
     </div>
   </div>
   <!-- Modal END -->
@@ -211,37 +216,37 @@ include_once 'vals/inc/configAll.php';
 
 
 
-<?php 
+  <?php 
 
-include_once 'subcontent/footer.php'; 
+  include_once 'subcontent/footer.php'; 
 // Google Maps JavaScript =========
-echo '
-<script> 
-function myMap() {
-  myCenter=new google.maps.LatLng(3.100329, 101.644743);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+  echo '
+  <script> 
+  function myMap() {
+    myCenter=new google.maps.LatLng(3.100329, 101.644743);
+    var mapOptions= {
+      center:myCenter,
+      zoom:12, scrollwheel: false, draggable: false,
+      mapTypeId:google.maps.MapTypeId.ROADMAP
+    };
+    var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
 
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
-function w3_open() {
-  var x = document.getElementById("mySidebar");
-  x.style.width = "300px";
-  x.style.paddingTop = "10%";
-  x.style.display = "block";
-}
-</script>';
+    var marker = new google.maps.Marker({
+      position: myCenter,
+    });
+    marker.setMap(map);
+  }
+  function w3_open() {
+    var x = document.getElementById("mySidebar");
+    x.style.width = "300px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+  }
+  </script>';
 
-echo '<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4nO2W7RBU2pEJW4CNypCwek6qt30sl_s&callback=myMap"></script>';
+  echo '<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4nO2W7RBU2pEJW4CNypCwek6qt30sl_s&callback=myMap"></script>';
 
-?>
+  ?>
 
 
 </body>
