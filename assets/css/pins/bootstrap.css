@@ -56,13 +56,12 @@ b,
 strong {
   font-weight: bold;
 }
-/*.do-box {
-  background-color:black;
+.do-box {
+  background-color:rgba(10,10,10,.8);
   color:white;
   padding:10px;
   border: 1px solid #009688;
-
-}*/
+}
 
 /*CUSTOM CODE FOR CHANGE BOX FEATURE */
 .active-box {
