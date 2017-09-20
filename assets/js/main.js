@@ -36,6 +36,64 @@ window.onclick = function(event) {
 
 
 
+$(".category-toolbar").change(function() {
+  if(document.getElementById('box-1').checked) {
+    
+    $('label[for=box-1]').addClass('active-box');
+    $('label[for=box-1]').siblings().removeClass('active-box');
+    $("#changebox-title").html("Food Aid");
+    $("#changebox-content").html("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam in dolor repellendus rerum esse libero, ut veritatis, modi harum dolores sed ullam consectetur, minima labore. Beatae repellendus voluptatum, dolorum laborum.");
+    $("#content-image").attr('src', 'assets/images/food-icon.png');
+
+  }
+  else if(document.getElementById('box-2').checked) {
+    
+    $('label[for=box-2]').addClass('active-box');
+    $('label[for=box-2]').siblings().removeClass('active-box');
+    $("#changebox-title").html("Advocacy");
+    $("#changebox-content").html("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam in dolor repellendus rerum esse libero, ut veritatis, modi harum dolores sed ullam consectetur, minima labore. Beatae repellendus voluptatum, dolorum laborum.");
+    $("#content-image").attr('src', 'assets/images/advo-icon.png');
+
+
+  }
+  else if(document.getElementById('box-3').checked) {
+    
+    $('label[for=box-3]').addClass('active-box');
+    $('label[for=box-3]').siblings().removeClass('active-box');
+    $("#changebox-title").html("Empowerment Programs");
+    $("#changebox-content").html("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam in dolor repellendus rerum esse libero, ut veritatis, modi harum dolores sed ullam consectetur, minima labore. Beatae repellendus voluptatum, dolorum laborum.");
+    $("#content-image").attr('src', 'assets/images/empower-icon.png');
+
+  }
+  else if(document.getElementById('box-4').checked) {
+    
+    $('label[for=box-4]').addClass('active-box');
+    $('label[for=box-4]').siblings().removeClass('active-box');
+    $("#changebox-title").html("Counselling");
+    $("#changebox-content").html("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam in dolor repellendus rerum esse libero, ut veritatis, modi harum dolores sed ullam consectetur, minima labore. Beatae repellendus voluptatum, dolorum laborum.");
+    $("#content-image").attr('src', 'assets/images/counsel-icon.png');
+
+  }
+  else if(document.getElementById('box-5').checked) {
+    
+    $('label[for=box-5]').addClass('active-box');
+    $('label[for=box-5]').siblings().removeClass('active-box');
+    $("#changebox-title").html("Reform initiatives");
+    $("#changebox-content").html("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam in dolor repellendus rerum esse libero, ut veritatis, modi harum dolores sed ullam consectetur, minima labore. Beatae repellendus voluptatum, dolorum laborum.");
+    $("#content-image").attr('src', 'assets/images/reform-icon.png');
+
+  }
+  else if(document.getElementById('box-6').checked) {
+    
+    $('label[for=box-6]').addClass('active-box');
+    $('label[for=box-6]').siblings().removeClass('active-box');
+    $("#changebox-title").html("Training");
+    $("#changebox-content").html("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam in dolor repellendus rerum esse libero, ut veritatis, modi harum dolores sed ullam consectetur, minima labore. Beatae repellendus voluptatum, dolorum laborum.");
+    $("#content-image").attr('src', 'assets/images/train-icon.png');
+
+  }
+});
+
 
   //     mixitup('#mix-wrapper', {
   //   load: {
