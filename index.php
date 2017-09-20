@@ -199,19 +199,18 @@ include_once 'vals/inc/configAll.php';
   <br/>
 
   <div class="what-we-do" style="height:1000px; margin-top:10%">
-    <h1 href="info-sect" class="info-sect"> Our Main Focus: </h1>
- 
+    <h1 href="info-sect" class="info-sect"> Suriana Welfare Society of Malaysia </h1>
+    <h2 align="center"> What We Do: </h2>
+ <hr/>
       <div class="col-lg-4 do-box"><h3>VICTIMS OF URBAN POVERTY</h3><p>Our mission is to serve and bring economic transformation and enrichment to the victims of urban poverty in Malaysia. We promote practical and innovative solutions as well as advocate for the rights of the victims.</p></div>
       <div class="col-lg-4 do-box"><h3>TRAFFICKING SURVIVORS</h3>
         <p>Suriana Welfare Society has been appointed by the Ministry of Social Welfare to conduct counseling sessions and empowerment programs to restore dignity to the Survivors of Human Trafficking.</p></div>
       <div class="col-lg-4 do-box"><h3>VICTIMS OF CHILD ABUSE</h3><p>Suriana Welfare Society is spearheading a nationwide ChildSafe Initiative that is designed to protect children from the scourge of Pedophiles and Sexual Predators.</p></div>
          <!-- Slick Feature -->
-    <div class="col-lg-12 col-m-12 col-sm-12" id="test" data-slick='{"slidesToShow":1, "slidesToScroll": 3, "dots": true, "autoplay": true, "autoplaySpeed": 1000}'>
-      <div><h2>garhaerhtj</h2></div>
-      <div><h2>garhaerhtj</h2></div>
-      <div><h2>garhaerhtj</h2></div>
+<!--     <div class="col-lg-12 col-m-12 col-sm-12" id="test" data-slick='{"slidesToShow":1, "slidesToScroll": 3, "dots": true, "autoplay": true, "autoplaySpeed": 1000}'>
+  
     </div>
-
+ -->
   </div>
   <!-- Google Maps ID -->
   <div id="googleMap" style="width:100%;height:420px;"></div>

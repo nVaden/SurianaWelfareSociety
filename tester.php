@@ -70,9 +70,12 @@
     				<div id="changebox-title">
     					Food Aid
     				</div>
+    				<div class="col-lg-12 text-center">
+    					<img id="content-image" src="assets/images/food-icon.png" class="change-icon">
+    				</div>
 
-    				<div id="changebox-content">
-    					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione commodi, sed perspiciatis cupiditate accusantium at corrupti, eos distinctio enim dolor eius magnam saepe reprehenderit asperiores adipisci voluptas rem ab molestias.
+    				<div id="changebox-content" class="col-lg-12">
+    					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione commodi, sed perspiciatis cupiditate accusantium at corrupti, eos distinctio enim dolor eius magnam saepe reprehenderit asperiores adipisci voluptas rem ab molestias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta beatae dicta ratione nihil iusto laboriosam enim eius, corporis assumenda ea dolorum! Cum veniam excepturi provident nobis sunt voluptatibus quos repellendus!
     				</div>
 
     			</div>
@@ -96,52 +99,58 @@
     <script>
     	$(".category-toolbar").change(function() {
     		if(document.getElementById('box-1').checked) {
-    			console.log('live');
+    			
     			$('label[for=box-1]').addClass('active-box');
     			$('label[for=box-1]').siblings().removeClass('active-box');
     			$("#changebox-title").html("Food Aid");
     			$("#changebox-content").html("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam in dolor repellendus rerum esse libero, ut veritatis, modi harum dolores sed ullam consectetur, minima labore. Beatae repellendus voluptatum, dolorum laborum.");
+    			$("#content-image").attr('src', 'assets/images/food-icon.png');
 
     		}
     		else if(document.getElementById('box-2').checked) {
-    			console.log('work');
+    			
     			$('label[for=box-2]').addClass('active-box');
     			$('label[for=box-2]').siblings().removeClass('active-box');
     			$("#changebox-title").html("Advocacy");
     			$("#changebox-content").html("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam in dolor repellendus rerum esse libero, ut veritatis, modi harum dolores sed ullam consectetur, minima labore. Beatae repellendus voluptatum, dolorum laborum.");
+    			$("#content-image").attr('src', 'assets/images/advo-icon.png');
 
 
     		}
     		else if(document.getElementById('box-3').checked) {
-    			console.log('party');
+    			
     			$('label[for=box-3]').addClass('active-box');
     			$('label[for=box-3]').siblings().removeClass('active-box');
     			$("#changebox-title").html("Empowerment Programs");
     			$("#changebox-content").html("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam in dolor repellendus rerum esse libero, ut veritatis, modi harum dolores sed ullam consectetur, minima labore. Beatae repellendus voluptatum, dolorum laborum.");
+    			$("#content-image").attr('src', 'assets/images/empower-icon.png');
 
     		}
     		else if(document.getElementById('box-4').checked) {
-    			console.log('test-4');
+    			
     			$('label[for=box-4]').addClass('active-box');
     			$('label[for=box-4]').siblings().removeClass('active-box');
     			$("#changebox-title").html("Counselling");
     			$("#changebox-content").html("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam in dolor repellendus rerum esse libero, ut veritatis, modi harum dolores sed ullam consectetur, minima labore. Beatae repellendus voluptatum, dolorum laborum.");
+    			$("#content-image").attr('src', 'assets/images/counsel-icon.png');
 
     		}
     		else if(document.getElementById('box-5').checked) {
-    			console.log('test-5');
+    			
     			$('label[for=box-5]').addClass('active-box');
     			$('label[for=box-5]').siblings().removeClass('active-box');
     			$("#changebox-title").html("Reform initiatives");
     			$("#changebox-content").html("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam in dolor repellendus rerum esse libero, ut veritatis, modi harum dolores sed ullam consectetur, minima labore. Beatae repellendus voluptatum, dolorum laborum.");
+    			$("#content-image").attr('src', 'assets/images/reform-icon.png');
 
     		}
     		else if(document.getElementById('box-6').checked) {
-    			console.log('test-6');
+    			
     			$('label[for=box-6]').addClass('active-box');
     			$('label[for=box-6]').siblings().removeClass('active-box');
     			$("#changebox-title").html("Training");
     			$("#changebox-content").html("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam in dolor repellendus rerum esse libero, ut veritatis, modi harum dolores sed ullam consectetur, minima labore. Beatae repellendus voluptatum, dolorum laborum.");
+    			$("#content-image").attr('src', 'assets/images/train-icon.png');
 
     		}
     	});
