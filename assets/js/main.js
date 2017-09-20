@@ -51,7 +51,7 @@ $(".category-toolbar").change(function() {
     $('label[for=box-2]').addClass('active-box');
     $('label[for=box-2]').siblings().removeClass('active-box');
     $("#changebox-title").html("Advocacy");
-    $("#changebox-content").html("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam in dolor repellendus rerum esse libero, ut veritatis, modi harum dolores sed ullam consectetur, minima labore. Beatae repellendus voluptatum, dolorum laborum.");
+    $("#changebox-content").html("Suriana is a part of The Malaysian Royal Police (PDRM’s D11- Child Abuse and Sexual Investigation Division Section) Child Protection Taskforce. Through this, we are able to support and to improve our effectiveness in protecting children from abuse.");
     $("#content-image").attr('src', 'assets/images/advo-icon.png');
 
 
@@ -70,7 +70,7 @@ $(".category-toolbar").change(function() {
     $('label[for=box-4]').addClass('active-box');
     $('label[for=box-4]').siblings().removeClass('active-box');
     $("#changebox-title").html("Counselling");
-    $("#changebox-content").html("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam in dolor repellendus rerum esse libero, ut veritatis, modi harum dolores sed ullam consectetur, minima labore. Beatae repellendus voluptatum, dolorum laborum.");
+    $("#changebox-content").html("In light of the pedophile. Richard Huckle who preyed on our children, NECF has engaged Suriana to conduct the Childsafe Initiative to increase the awareness of the church to be vigilant in protecting our children. The Childsafe Initiative is an Initiative for childcare organizations to implement proper employee screening programs, implementation of SOPs, training programs that include proper ways of disciplining children, cyber-wellness programs for parents and children, and the implementation of standards that would ensure the safety of children in any childcare institution.");
     $("#content-image").attr('src', 'assets/images/counsel-icon.png');
 
   }
@@ -88,7 +88,7 @@ $(".category-toolbar").change(function() {
     $('label[for=box-6]').addClass('active-box');
     $('label[for=box-6]').siblings().removeClass('active-box');
     $("#changebox-title").html("Training");
-    $("#changebox-content").html("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam in dolor repellendus rerum esse libero, ut veritatis, modi harum dolores sed ullam consectetur, minima labore. Beatae repellendus voluptatum, dolorum laborum.");
+    $("#changebox-content").html("Suriana is proactively providing training for parents, children, government officers, volunteers and non-government organizations in the areas that advocate children against child abuse, victims of urban poverty as well as survivors of human trafficking.");
     $("#content-image").attr('src', 'assets/images/train-icon.png');
 
   }

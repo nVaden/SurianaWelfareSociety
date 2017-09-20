@@ -39,18 +39,29 @@ include_once 'vals/inc/configAll.php';
 	<div class="container">
 
 		<h1>Volunteer and Donation Page</h1>
-		<!-- Button to open the modal -->
-		<button onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
 
-		<!-- The Modal (contains the Sign Up form) -->
-		<div id="id01" class="modal">
-			<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-			<form class="modal-content animate" action="/action_page.php">
+    <div class="main-content">
+      <hr/>
+      <p>We are inviting individuals and corporations to partner with us in making a difference in the lives of these children. With merely a simple commitment to set aside at least a ringgit a day, you will be making a difference in the lives of children. Every ringgit would go toward providing children with food aid, empowering a parent or sibling through long term development programs such as living skills training, or toward procuring the necessary equipment, engaging the teachers and volunteers as well as to organize and run the M.A.D.E Initiative in our training facility and the various locations where children are.</p>
+
+      <p>Therefore, partner with us now and take up the challenge to make a difference today.</p>
+
+      <p>Upon signing up, you will receive periodic updates on our programs and activities to provide accountability to you.</p>
+      <hr/>
+    </div>
+    <!-- Button to open the modal -->
+    <button onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
+
+    <!-- The Modal (contains the Sign Up form) -->
+    <div id="id01" class="modal">
+     <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+     <form class="modal-content animate" action="/action_page.php">
        <header class="w3-container w3-teal"> 
         <h3>Take Action Now</h3>
         <p>Stand with us to fight against human trafficking and urban poverty.</p>
       </header>
       <div class="container">
+
         <div class="form-group">
          <label><b>Email</b></label>
          <input type="text" placeholder="Enter Email" class="form-control" name="email" required>
