@@ -56,6 +56,47 @@ b,
 strong {
   font-weight: bold;
 }
+/*.do-box {
+  background-color:black;
+  color:white;
+  padding:10px;
+  border: 1px solid #009688;
+
+}*/
+
+/*CUSTOM CODE FOR CHANGE BOX FEATURE */
+.active-box {
+background-color:#009688 !important;
+border:2px solid grey;
+}
+.categorybox {
+  text-align:center;
+  background-color: black;
+  color:white;
+  height:183px;
+}
+#changebox {
+  height:560px;
+  background-color: #009688;
+}
+.category-toolbar {
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+#changebox-title {
+  color:white;
+  font-size:x-large;
+}
+#changebox-content {
+  margin-top:50%;
+  color:white;
+}
+.change-icon {
+  margin-top:10%;
+  height:75px;
+  width:75px;
+}
 
 dfn {
   font-style: italic;

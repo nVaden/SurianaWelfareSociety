@@ -33,7 +33,7 @@ include_once 'vals/inc/configAll.php';
   <div class="w3-display-container w3-animate-opacity" id="myPage">
     <img src="assets/images/banner-image.jpg" style="margin-left:7%; width:85%; min-height:350px;max-height:600px;">
     <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
-      <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Click Here">Do you need help now?</button>
+      <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-#009688" title="Click Here">Do you need help now?</button>
     </div>
   </div>
   <!-- Image END -->
@@ -42,8 +42,8 @@ include_once 'vals/inc/configAll.php';
   <!-- Modal / Do you need help? -->
   <div id="id01" class="w3-modal">
     <div class="w3-modal-content w3-card-4 w3-animate-top">
-      <header class="w3-container w3-teal w3-display-container"> 
-        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+      <header class="w3-container w3-#009688 w3-display-container"> 
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-#009688 w3-display-topright"><i class="fa fa-remove"></i></span>
         <h3>Do you need help now?</h3>
         <p>Please give us all the contact information you can.</p>
       </header>
@@ -75,7 +75,7 @@ include_once 'vals/inc/configAll.php';
 
       </div>
       <hr/>
-      <div class="w3-teal modal-footer">
+      <div class="w3-#009688 modal-footer">
         <p>*All details given will be handled with the upmost privacy and addressed as soon as possible.</p>
       </div>
     </div>
@@ -83,7 +83,7 @@ include_once 'vals/inc/configAll.php';
   <!-- Modal END -->
 
   <!-- Main Blog Body -->
-  <div class="w3-row-padding w3-padding-64" style="background-color:teal; height:800px">
+  <div class="w3-row-padding w3-padding-64" style="background-color:#009688; height:800px">
 
     <div class="w3-quarter">
       <a href="#">
@@ -133,6 +133,7 @@ include_once 'vals/inc/configAll.php';
           </div>
         </div>
       </a>
+      <br/>
     </div>
     <div class="w3-quarter">
       <a href="#">
@@ -186,6 +187,10 @@ include_once 'vals/inc/configAll.php';
         </div>
       </a>
     </div>
+    <div class="w3-container">
+      <a class="pull-right" style="padding-top:10px;text-decoration: underline" href="#"><h4>View More -></h4></a>
+    </div>
+    <hr/>
     <!-- END -->
 
     <!-- What We Do -->
@@ -194,14 +199,17 @@ include_once 'vals/inc/configAll.php';
   <br/>
 
   <div class="what-we-do" style="height:1000px; margin-top:10%">
-    <h1 href="info-sect" class="info-sect"> What We Do </h1>
-    <!-- Slick Feature -->
-    <div class="col-lg-12 col-m-12 col-sm-12" id="test" data-slick='{"slidesToShow":4, "slidesToScroll": 1, "dots": true, "autoplay": true, "autoplaySpeed": 500}'>
-      <div style="background-color:teal"><h3>2</h3></div>
-      <div style="background-color:black"><h3>3</h3></div>
-      <div style="background-color:teal"><h3>2</h3></div>
-      <div style="background-color:black"><h3>3</h3></div>
-
+    <h1 href="info-sect" class="info-sect"> Our Main Focus: </h1>
+ 
+      <div class="col-lg-4 do-box"><h3>VICTIMS OF URBAN POVERTY</h3><p>Our mission is to serve and bring economic transformation and enrichment to the victims of urban poverty in Malaysia. We promote practical and innovative solutions as well as advocate for the rights of the victims.</p></div>
+      <div class="col-lg-4 do-box"><h3>TRAFFICKING SURVIVORS</h3>
+        <p>Suriana Welfare Society has been appointed by the Ministry of Social Welfare to conduct counseling sessions and empowerment programs to restore dignity to the Survivors of Human Trafficking.</p></div>
+      <div class="col-lg-4 do-box"><h3>VICTIMS OF CHILD ABUSE</h3><p>Suriana Welfare Society is spearheading a nationwide ChildSafe Initiative that is designed to protect children from the scourge of Pedophiles and Sexual Predators.</p></div>
+         <!-- Slick Feature -->
+    <div class="col-lg-12 col-m-12 col-sm-12" id="test" data-slick='{"slidesToShow":1, "slidesToScroll": 3, "dots": true, "autoplay": true, "autoplaySpeed": 1000}'>
+      <div><h2>garhaerhtj</h2></div>
+      <div><h2>garhaerhtj</h2></div>
+      <div><h2>garhaerhtj</h2></div>
     </div>
 
   </div>
