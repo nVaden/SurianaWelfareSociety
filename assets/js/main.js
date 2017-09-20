@@ -35,7 +35,7 @@ window.onclick = function(event) {
 });
 
 
-
+// Change Box Feature ========================================
 $(".category-toolbar").change(function() {
   if(document.getElementById('box-1').checked) {
     
