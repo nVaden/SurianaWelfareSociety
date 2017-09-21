@@ -39,39 +39,60 @@ include_once 'vals/inc/configAll.php';
 	<div class="container">
 
 		<h1>Volunteer and Donation Page</h1>
-		<!-- Button to open the modal -->
 		
+    <div class="main-content">
+      <hr/>
+      <p>We are inviting individuals and corporations to partner with us in making a difference in the lives of these children. With merely a simple commitment to set aside at least a ringgit a day, you will be making a difference in the lives of children. Every ringgit would go toward providing children with food aid, empowering a parent or sibling through long term development programs such as living skills training, or toward procuring the necessary equipment, engaging the teachers and volunteers as well as to organize and run the M.A.D.E Initiative in our training facility and the various locations where children are.</p>
+
+      <p>Therefore, partner with us now and take up the challenge to make a difference today.</p>
+
+      <p>Upon signing up, you will receive periodic updates on our programs and activities to provide accountability to you.</p>
+      <hr/>
+    </div>
+    <!-- Button to open the modal -->
     <button class="signupbtn signupform">Sign Up</button>
-   
     <button class="signinform signupbtn">Sign In</button> 
 
-		<!-- The Modal (contains the Sign Up form) -->
-<!-- 		<div id="id01" class="modal">
-			<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-			<form class="modal-content animate" action="/action_page.php">
-				<div class="container">
-					<label><b>Email</b></label>
-					<input type="text" placeholder="Enter Email" name="email" required>
+    <!-- The Modal (contains the Sign Up form) -->
+<!--     <div id="id01" class="modal">
+     <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+     <form class="modal-content animate" action="/action_page.php">
+       <header class="w3-container w3-teal"> 
+        <h3>Take Action Now</h3>
+        <p>Stand with us to fight against human trafficking and urban poverty.</p>
+      </header>
+      <div class="container">
 
-					<label><b>Password</b></label>
-					<input type="password" placeholder="Enter Password" name="psw" required>
+        <div class="form-group">
+         <label><b>Email</b></label>
+         <input type="text" placeholder="Enter Email" class="form-control" name="email" required>
+       </div>
 
-					<label><b>Repeat Password</b></label>
-					<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-					<input type="checkbox" checked="checked"> Remember me
-					<p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+       <div class="form-group">
+         <label>Password</label>
+         <input type="password" placeholder="Enter Password" class="form-control"  name="psw" required>
+       </div>
 
-					<div class="clearfix">
-						<!-- <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-						<button type="submit" class="signupbtn signupform">Sign Up</button>
-            <button type="submit" class="hidden signinform signupform">Sign In</button> -->
-              <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal " title="Singup">Singup</i></a>
-              <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal hidden signinform" title="Singup">Singin</i></a> -->
-					<!-- </div>
-				</div>
-			</form>
-		</div> -->
-	</div>
+
+       <div class="form-group">
+         <label>Repeat Password</label>
+         <input type="password" placeholder="Repeat Password" class="form-control" name="psw-repeat" required>
+         <input type="checkbox" checked="checked"> Remember me
+         <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+       </div>
+
+       <div class="clearfix form-group">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Uuup</button>
+      </div>
+
+    </div>
+    <div class="w3-teal modal-footer">
+      <p>*All details given will be handled with the upmost privacy and addressed as soon as possible.</p>
+    </div>
+  </form>
+</div> -->
+</div>
 
 <?php
 

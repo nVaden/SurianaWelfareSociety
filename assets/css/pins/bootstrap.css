@@ -56,6 +56,64 @@ b,
 strong {
   font-weight: bold;
 }
+.do-box {
+  background-color:rgba(10,10,10,.8);
+  color:white;
+  padding:10px;
+  border: 1px solid #009688;
+}
+
+/*CUSTOM CODE FOR CHANGE BOX FEATURE */
+.active-box {
+background-color:#009688 !important;
+
+border-bottom:8px solid black !important;
+}
+.categorybox {
+  text-align:center;
+  background-color: rgba(20,20,20,.3);
+  color:white;
+  height:183px;
+  border-radius:3px;
+  border:1px groove grey;
+}
+.categorybox:hover {
+  border-bottom:8px solid black;
+  background-color: #009688;
+  transition-duration: .5s;
+}
+#changebox {
+  height:560px;
+  background-color: #009688;
+  border-radius:5px;
+}
+.category-toolbar {
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+#changebox-title {
+  color:white;
+  font-size:40px;
+  text-align:center;
+  margin-top:25px;
+  border:1px groove rgba(10,10,10,.1);
+}
+#changebox-content {
+  margin-top:20px;
+  padding:30px;
+  color:white;
+  border:1px groove rgba(10,10,10,.1);
+}
+#content-image {
+border:1px groove rgba(10,10,10,.1);
+padding:20px;
+}
+.change-icon {
+  margin-top:20px;
+  height:125px;
+  width:125px;
+}
 
 dfn {
   font-style: italic;
