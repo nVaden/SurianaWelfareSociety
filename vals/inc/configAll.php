@@ -59,7 +59,7 @@ $defaulturl['profile'] = $homeurl.'/u';
 // $itempurposeurl = 'https://s3-ap-southeast-1.amazonaws.com/images.rentmarket.my/uploads/icons/purposes';
 
 //used to send verification link
-$rmnoreplyemail = 'no-reply@SurianaWelfareSociety.com.my';
+$noreplyemail = 'no-reply@SurianaWelfareSociety.com.my';
 
 $onlinememberid=0;
 if(isset($_SESSION['user'])){

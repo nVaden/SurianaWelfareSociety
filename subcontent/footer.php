@@ -23,7 +23,11 @@ echo '<script src="'.$defaulturl['home'].'/assets/js/jquery-migrate.min.js"></sc
 echo '<script src="'.$defaulturl['home'].'/assets/slick/slick.js"></script>';
 echo '<script src="'.$defaulturl['home'].'/assets/js/pins/bootstrap.min.js"></script>';
 
-
+$rdrlocation = $defaulturl['home'];
+if(isset($_SESSION['rdrlocation'])){
+  $rdrlocation = $_SESSION['rdrlocation'];
+}
+echo '<div id="rdrlocation" class="hidden">'.$rdrlocation.'</div>';
 ?>
 
 
