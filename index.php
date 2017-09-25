@@ -299,7 +299,11 @@ include_once 'vals/inc/configAll.php';
       </div>
     </div>
     <!-- Google Maps ID -->
-    <div id="googleMap" style="width:100%;height:420px;"></div>
+    <div class="container">
+      <div id="googleMap" style="width:100%;height:420px;"></div>
+    </div>
+    <hr/>
+    <br/>
     <!-- END -->
 
 

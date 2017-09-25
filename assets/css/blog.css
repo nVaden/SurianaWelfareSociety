@@ -1,0 +1,29 @@
+.bloglist{
+  border-left: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 25px;
+  padding-bottom: 7px;
+}
+.bloglist:hover{
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.bloglist .title{
+  font-size: 18px;
+  margin-top: -5px;
+}
+.bloglist .title a{
+  text-decoration: none;
+}
+.blogtags a{
+  border-bottom: 1px solid #eee;
+  text-decoration: none;
+  padding: 3px 7px;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-size: 11px;
+}
+.blogtags a:hover{
+  border-bottom: 1px solid blue;
+}
