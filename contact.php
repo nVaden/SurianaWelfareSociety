@@ -4,12 +4,6 @@ include_once 'vals/inc/configAll.php';
 
 ?>
 
-<?php 
-
-include_once 'vals/inc/configAll.php'; 
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -116,8 +110,12 @@ include_once 'vals/inc/configAll.php';
 
 
 <!-- Google Maps -->
+<br/>
+<div class="w3-container">
 <div id="googleMap" style="width:100%;height:420px;"></div>
 </div>
+<hr/>
+<br/>
 <?php
 
 include_once 'subcontent/footer.php'; 
