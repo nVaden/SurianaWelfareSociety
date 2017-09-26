@@ -83,7 +83,7 @@ include_once 'vals/inc/configAll.php';
   <!-- Modal END -->
 
   <!-- Main Blog Body -->
-  <div class="w3-row-padding w3-padding-64" style="background-color:#009688; height:800px">
+  <div class="w3-row-padding w3-padding-64" style="background-color:#01C1C6; height:800px">
 
     <div class="w3-quarter">
       <a href="#">
@@ -216,14 +216,14 @@ include_once 'vals/inc/configAll.php';
     </div>
     <div class="container">
       <div class="col-lg-4 do-box">
-        <h3 style="color: #009688">VICTIMS OF URBAN POVERTY</h3>
+        <h3 style="color: #01C1C6">VICTIMS OF URBAN POVERTY</h3>
         <p>Our mission is to serve and bring economic transformation and enrichment in the lives of the victims of urban poverty in Malaysia. We achieve this through practical and innovative solutions and we advocate for the rights of the victims.</p>
 
         <p>We serve the Urban Poor Communities by providing for their felt needs and mentorship in financial management and in some cases, micro financing as well as business opportunities. It is our hope and aspiration that the individual and their family’s dignity are restored and that the cycle of poverty will be overcome. We aim to achieve this through improved education, provision of nutrition and raising the awareness of the importance of hygiene and expansion of economic opportunity to the victims of urban poverty.</p>
       </div>
 
       <div class="col-lg-4 do-box">
-        <h3 style="color: #009688">TRAFFICKING SURVIVORS</h3>
+        <h3 style="color: #01C1C6">TRAFFICKING SURVIVORS</h3>
         <p>Human trafficking is a form of modern slavery — a multi-billion dollar criminal industry that denies freedom to 20.9 million people around the world. And no matter where you live, chances are it’s happening nearby. From the girl forced into prostitution, to the man discovered in a restaurant kitchen, a foreign laborer stripped of his passport and held against his will. All trafficking survivors share one essential experience: the loss of freedom.</p>
 
         <p>The human trafficking survivors become trapped and fear leaving for myriad reasons, including psychological trauma, shame, emotional attachment, or physical threats to themselves or their children’s safety.</p>
@@ -232,7 +232,7 @@ include_once 'vals/inc/configAll.php';
       </div>
 
       <div class="col-lg-4 do-box">
-        <h3 style="color: #009688">VICTIMS OF CHILD ABUSE</h3>
+        <h3 style="color:#01C1C6">VICTIMS OF CHILD ABUSE</h3>
         <p>Child abuse is subjecting a child through action or failing to act: causes injury, death, emotional harm or risk of serious harm to a child, many forms of child maltreatment, including neglect, physical abuse, sexual abuse, exploitation, emotional abuse, denying a child his/her basic rights to proper nutrition and education, caning and detaining a child in juvenile or refugee detention centers.</p>
 
         <p>Suriana Welfare Society is spearheading a nationwide ChildSafe Initiative that is designed to protect children from the scourge of Pedophiles and Sexual Predators. This campaign encompasses implementing Standard Operating Procedures, Tougher Screening Procedures and Educational Initiatives for educators, parents and children.</p>

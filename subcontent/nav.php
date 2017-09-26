@@ -43,7 +43,7 @@
  <div class="w3-bar w3-theme-d2 w3-left-align">
   <?php
   echo '<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="'.$defaulturl['home'].'/index.php" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  <a href="'.$defaulturl['home'].'/index.php" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Suriana Welfare Society Of Malaysia</a>
+  <a href="'.$defaulturl['home'].'/index.php" class="w3-bar-item w3-button teal-theme"><i class="fa fa-home w3-margin-right"></i>Suriana Welfare Society Of Malaysia</a>
   <a href="'.$defaulturl['home'].'/#test-target" class="w3-bar-item w3-button w3-hide-small w3-hover-white">What We Do</a>
   <a href="'.$defaulturl['home'].'/blog.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Blog</a>
   <a href="'.$defaulturl['home'].'/volunteer.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Take Action</a>

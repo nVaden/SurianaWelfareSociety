@@ -60,12 +60,12 @@ strong {
   background-color:rgba(10,10,10,.8);
   color:white;
   padding:10px;
-  border: 1px solid #009688;
+  border: 1px solid #01C1C6;
 }
 
 /*CUSTOM CODE FOR CHANGE BOX FEATURE */
 .active-box {
-background-color:#009688 !important;
+background-color:#01C1C6 !important;
 
 border-bottom:8px solid black !important;
 }
@@ -79,12 +79,12 @@ border-bottom:8px solid black !important;
 }
 .categorybox:hover {
   border-bottom:8px solid black;
-  background-color: #009688;
+  background-color: #01C1C6;
   transition-duration: .5s;
 }
 #changebox {
   height:560px;
-  background-color: #009688;
+  background-color:#01C1C6;
   border-radius:5px;
 }
 .category-toolbar {

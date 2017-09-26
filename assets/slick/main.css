@@ -1,4 +1,6 @@
-
+p {
+    font-family: "proxima_nova", Helvetica, Arial, sans-serif !important;
+}
 .card-display {
     border-radius:10px;
 }
@@ -53,7 +55,9 @@
    background: #3a9fbf;
    color: white;
 }
-
+.teal-theme {
+    background-color: #01C1C6 !important;
+}
 #test {
     height:500px;
 }
