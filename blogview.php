@@ -42,12 +42,14 @@ if(isset($_GET['bid']) && isset($_GET['burl'])){
      include 'subcontent/nav.php';
      ?>
 
+
+
      <!-- Page Content -->
      <div class="container">
 
 
        <?php
-       echo '<div class="row">
+       echo '<div class="row" style="margin-top: 60px;">
        <div class="col-sm-12">
        <h1><A href="'.$blogurl.'">'.$blogview['title'].'</a></h1>
        </div>
@@ -63,6 +65,8 @@ if(isset($_GET['bid']) && isset($_GET['burl'])){
        <br>
        <br>
        Posted on '.date('d M Y',strtotime($blogview['postdate'])).'
+       <br>
+       Category: '.$blogview['category'].'
        </div>
        </div>';
        ?>
@@ -73,13 +77,13 @@ if(isset($_GET['bid']) && isset($_GET['burl'])){
         max-width: 100%;
       }
     </style>
-    <?php
-    include 'subcontent/footer.php';
-    ?>
+    
 
   </div>
   <!-- /.container -->
-
+<?php
+    include 'subcontent/footer.php';
+    ?>
 </body>
 
 </html>
