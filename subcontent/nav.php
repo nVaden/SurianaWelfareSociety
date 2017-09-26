@@ -47,9 +47,11 @@
   <a href="'.$defaulturl['home'].'/#test-target" class="w3-bar-item w3-button w3-hide-small w3-hover-white">What We Do</a>
   <a href="'.$defaulturl['home'].'/blog.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Blog</a>
   <a href="'.$defaulturl['home'].'/volunteer.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Take Action</a>
-  <a href="'.$defaulturl['home'].'/contact.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>';
-  ?>
+  <a href="'.$defaulturl['home'].'/contact.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
   <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+  <input type="hidden" value="'.$defaulturl['home'].'" id="homeurl" /> ';
+  ?>
+
 <!--     <div class="w3-dropdown-hover w3-hide-small">
       <button class="w3-button" title="Notifications">Take Action <i class="fa fa-caret-down"></i></button>     
       <div class="w3-dropdown-content w3-card-4 w3-bar-block">
