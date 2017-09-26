@@ -62,7 +62,7 @@ $(".signupform").click(function(){
     '<input type="text" placeholder="Phone number" class="userphone form-control" />' +
     '</div>' +
     '<div class="form-group">'+
-    '<p class="text-11">By clicking Sign up or Continue with, I agree to RentMarket’s <a target="_blank" href="terms.php">Terms of Service</a>, and <a target="_blank" href="privacy.php">Privacy Policy</a></p>' +
+    '<p class="text-11">By clicking Sign up or Continue with, I agree to Suriana Welfare Society’s <a target="_blank" href="terms.php">Terms of Service</a>, and <a target="_blank" href="privacy.php">Privacy Policy</a></p>' +
     '</div>' +
     '</form>',
     buttons: {
@@ -321,6 +321,7 @@ function signinformrun() {
 //   });
 // }
 
+
 // Change Box Feature ========================================
 $(".category-toolbar").change(function() {
   if(document.getElementById('box-1').checked) {
@@ -380,21 +381,4 @@ $(".category-toolbar").change(function() {
   }
 });
 
-
-  //     mixitup('#mix-wrapper', {
-  //   load: {
-  //     sort: 'order:asc' /* default:asc */
-  //   },
-  //   animation: {
-  //     effects: 'fade rotateZ(-180deg)', /* fade scale */
-  //     duration: 700 /* 600 */
-  //   },
-  //   classNames: {
-  //     block: 'programs', /* mixitup */
-  //     elementFilter: 'filter-btn', /* control */
-  //     elementSort: 'sort-btn' /* control */
-  //   },
-  //   selectors: {
-  //     target: '.mix-target' /* .mix */
-  //   }
 
