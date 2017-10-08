@@ -165,7 +165,7 @@ if($totalposts>0){
 		<div class="title text-limit-1"><a href="'.$blogurl.'" title="'.$blogrow['title'].'">'.$blogrow['title'].'</a></div>
 		<p class="text-limit-3">'.$blogrow['shortinfo'].'</p>
 		</div>
-		<div class="col-sm-12 paddingno text-muted text-limit-1">comments: 12, category: '.$blogrow['category'].'</div>
+		<div class="col-sm-12 paddingno text-muted text-limit-1">category: '.$blogrow['category'].'</div>
 		</div>';
 	}
 }
