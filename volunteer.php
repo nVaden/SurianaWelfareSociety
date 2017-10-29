@@ -44,10 +44,9 @@ include_once 'vals/inc/configAll.php';
       <hr/>
     </div>
     <!-- Button to open the modal -->
-    <button style="border:1px solid black" class="signupbtn signupform">Sign Up</button>
-    <button style="border:1px solid black" class="signinform signupbtn">Sign In</button> 
+    <a href="signup.php" class="col-lg-6"><button style="border:1px solid black">Sign Up</button></a>
 
-    <a href="https://simplygiving.com/Contribute/Donation?NonProfitId=5A9A2324-A030-483C-A38C-369C897DEDDE"><button style="border:1px solid black">Make A Donation Now</button></a>
+    <a href="https://simplygiving.com/Contribute/Donation?NonProfitId=5A9A2324-A030-483C-A38C-369C897DEDDE" class="col-lg-6"><button style="border:1px solid black">Make A Donation Now</button></a>
 
 
 </div>

@@ -227,23 +227,6 @@ else {
 	</div>
 
 
-
-
-<!-- <div class="" style="height:400px;background-color:teal">
-	<div style="height:200px; color:white">Here The two features basics are place, to be made</div>
-	<button class="sort-btn" data-sort="order:asc">Ascending</button>
-	<button class="sort-btn" data-sort="year:desc order:desc">Descending <span class="multi">(Multi)</span></button>
-
-
-	<li class="mix-target undergraduate">
-		<a href="#">Blogs<span>(U)</span></a>
-	</li>
-	<li class="mix-target graduate">
-		<a href="#">Stories<span>(G)</span></a>
-	</li>
-
-</div>
--->
 <?php
 
 include_once 'subcontent/footer.php'; 
